@@ -8,7 +8,7 @@
   </button>
 </template>
 
-<script>
+<!-- <script>
 import { ref, reactive } from "@vue/reactivity";
 
 export default {
@@ -29,6 +29,15 @@ export default {
     };
 
     return { colors, message, matchColor };
+  },
+};
+</script> -->
+
+<script>
+import { colorPicker } from "../composables/color_picker.js";
+export default {
+  setup() {
+    return colorPicker();
   },
 };
 </script>
